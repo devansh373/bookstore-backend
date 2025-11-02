@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <title>Your OTP Code</title>
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        background-color: #f4f4f4;
+        padding: 20px;
+      }
+      .container {
+        background-color: #ffffff;
+        padding: 30px;
+        border-radius: 8px;
+        box-shadow: 0 0 10px rgba(0,0,0,0.1);
+        max-width: 500px;
+        margin: auto;
+      }
+      .otp {
+        font-size: 24px;
+        font-weight: bold;
+        color: #007bff;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <h2>Hello <%= name %>,</h2>
+      <p>Thank you for using our service.</p>
+      <p>Your One-Time Password (OTP) is:</p>
+      <p class="otp"><%= otp %></p>
+      <p>This OTP is valid for a limited time and can only be used once.</p>
+      <p>If you didn't request this, please ignore this email.</p>
+      <br />
+      <p>Regards,<br />Harsh Bookstore Team</p>
+    </div>
+  </body>
+</html>
